@@ -464,3 +464,30 @@ CASE
     ELSE fail
 END
 from fellowship_candidates;
+
+
+logical operators:-
+select first_name,last_name,candidate_status
+    -> from fellowship_candidates
+    -> where first_name='geeta' or first_name='deepak';
+	
+spacial operators:-
+select candidate_id degree_name from candidate_qualification where other_training IN('jspider');
+
+null:-
+select candidate_id,degree_name from candidate_qualification
+    -> where aggr_per IS NULL;
+	
+not-null:-
+select candidate_id,degree_name from candidate_qualification where aggr_per IS NOT NULL;
+
+single row function:-
+upper:-
+select upper(first_name) from fellowship_candidates;
+
+lower:-
+select lower(first_name) from fellowship_candidates;
+
+initcap:-   This converts first letter of each word in the string to capital.
+select initcap("raja") from dual;
+
