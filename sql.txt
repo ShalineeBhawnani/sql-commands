@@ -494,3 +494,24 @@ select initcap("raja") from dual;
 length:-
 select length(first_name), last_name 
 from fellowship_candidates;
+
+concat:-
+select concat(first_name,'works')
+from fellowship_candidates;
+
+nested function:-
+select concat(first_name,concat('got aggregate ',aggr_per))
+from fellowship_candidates;
+
+replace:-
+
+select replace('alia','a','b')
+from dual;
+
+substring:-
+select substring ('brizlabe',1,3)
+from dual;
+
+Instring:-
+select instr('brizlabe','z',1,1)
+from dual;
