@@ -556,3 +556,21 @@ to_char:-
 SELECT TO_CHAR(SYSDATE,'DD/MM/YYYY')    //oracle
 FROM DUAL;
 
+Multi Row Function:-
+count():-
+select count(first_name) from fellowship_candidates;
+
+ma():-
+select max(aggr_per) from fellowship_candidates;
+
+avrage:-
+select avg(aggr_per) from fellowship_candidates;
+ 
+ sum:-
+ select sum(aggr_per)
+ from fellowship_candidates;
+ 
+ group by Statement:-
+ select avg(aggr_per),degree
+ from fellowship_candidates
+ group by degree;
