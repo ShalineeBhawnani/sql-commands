@@ -548,3 +548,11 @@ from dual;
 select (SYSDATE()-hired_date)/365
 from fellowship_candidates;
 
+last_day:-
+select last_day(sysdate())
+from dual;
+
+to_char:-
+SELECT TO_CHAR(SYSDATE,'DD/MM/YYYY')    //oracle
+FROM DUAL;
+
