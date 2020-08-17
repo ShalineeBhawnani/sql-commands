@@ -515,3 +515,36 @@ from dual;
 Instring:-
 select instr('brizlabe','z',1,1)
 from dual;
+
+Reverse:-
+
+select reverse(last_name),first_name
+from fellowship_candidates;
+
+Number Function:-
+
+round(5.9)
+select round(5.9),round(5.5), round(4.4) from dual;
+
+o/p:- 6,6,4
+
+trunc:-
+select trunc(4.4),trunc(4.5),trunc(4.6)   //oracle
+from dual;
+o/p 4,4,4
+
+select rowid from fellowship_candidates;  //oracle
+
+rownum:-
+select rownum from fellowship_candidates;  //oracle
+
+datefunction:-
+select SYSDATE()
+from dual;
+
+SELECT SYSDATE() + 1
+from dual;
+
+select (SYSDATE()-hired_date)/365
+from fellowship_candidates;
+
