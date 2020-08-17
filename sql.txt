@@ -491,3 +491,6 @@ select lower(first_name) from fellowship_candidates;
 initcap:-   This converts first letter of each word in the string to capital.
 select initcap("raja") from dual;
 
+length:-
+select length(first_name), last_name 
+from fellowship_candidates;
